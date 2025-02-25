@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as c}from"./index-DY7gOG1B.js";const o={},r={class:"w-1/2 bg-gray-500 text-white p-2 rounded hover:bg-black",type:"submit"};function s(n,a){return c(),t("button",r," Reservar ")}const i=e(o,[["render",s]]);export{i as S};
