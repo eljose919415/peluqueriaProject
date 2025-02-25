@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-!3usht6ahp8!@usf$wqd6fr95r8fc6#8nw0tr!9c#)=-&9fb$@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -90,6 +90,13 @@ DATABASES = {
         'HOST': '127.0.0.1',
         'USER': 'calculum',
         'PASSWORD': 'calculum',
+        'PORT': 5432,
+    } if DEBUG else {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'peluqueria_erkm',
+        'HOST': 'postgresql://calculum:uL3BeoqNxsSaNdv1QsxivTByXiI9JnSY@dpg-cuuhavhopnds73eepki0-a/peluqueria_erkm',
+        'USER': 'calculum',
+        'PASSWORD': 'uL3BeoqNxsSaNdv1QsxivTByXiI9JnSY',
         'PORT': 5432,
     }
 }
