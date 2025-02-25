@@ -57,6 +57,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # URL de tu frontend
     "http://192.168.98.79:5173",  # URL de tu frontend
+    "http://192.168.98.79:5174",  # URL de tu frontend
 ]
 CORS_ALLOW_CREDENTIALS = True
 ROOT_URLCONF = 'peluqueriaBack.urls'
